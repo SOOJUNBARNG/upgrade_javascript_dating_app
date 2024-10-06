@@ -13,7 +13,7 @@ app.use(express.json()); // this ensures req.body is populated with parsed data
 app.use('/api/auth', authRoutes);
 
 // MongoDB connection
-mongoose.connect(process.env.MONGO_URI, { useNewUrlParser: true, useUnifiedTopology: true })
+mongoose.connect(process.env.MONGO_URI)
   .then(() => console.log('MongoDB connected'))
   .catch(err => console.log(err));
 

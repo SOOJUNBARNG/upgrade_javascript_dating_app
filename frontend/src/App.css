@@ -1,0 +1,122 @@
+/* App.css */
+
+/* General Styles */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f9f9f9; /* Light background */
+  color: #333; /* Dark text */
+}
+
+/* Header Styles */
+.App-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: #fff; /* White background for header */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Logo Styling */
+.App-logo {
+  width: 150px; /* Adjust logo size */
+  margin-bottom: 20px;
+}
+
+/* Button Styles */
+button {
+  background-color: #ff4081; /* Primary button color */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #e91e63; /* Darker shade on hover */
+}
+
+/* Login Component */
+.login-container {
+  background-color: #fff; /* White background for login */
+  border-radius: 8px;
+  padding: 40px; /* Increase padding for a larger look */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  width: 400px; /* Make the width bigger */
+  margin: auto; /* Center horizontally */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Center vertically and horizontally */
+}
+
+.login-container h2 {
+  margin: 0;
+  margin-bottom: 20px;
+  color: #333; /* Dark text for heading */
+}
+
+/* Input Styles */
+input[type='text'],
+input[type='password'] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc; /* Light border */
+  border-radius: 5px;
+}
+
+input[type='text']:focus,
+input[type='password']:focus {
+  border-color: #ff4081; /* Highlight border color */
+  outline: none; /* Remove default outline */
+}
+
+/* Footer Styles */
+.footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Additional styles for the Login component */
+.form-group {
+  margin-bottom: 15px; /* Space between input fields */
+}
+
+.form-input {
+  width: 100%; /* Full width */
+  padding: 10px; /* Padding for input */
+  margin-top: 5px; /* Space above input */
+  border: 1px solid #ccc; /* Light border */
+  border-radius: 5px; /* Rounded corners */
+}
+
+.submit-button {
+  background-color: #ff4081; /* Primary button color */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+  background-color: #e91e63; /* Darker shade on hover */
+}
+
+.error-message {
+  color: red; /* Red color for error messages */
+  margin-top: 10px; /* Space above error message */
+}

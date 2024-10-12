@@ -1,5 +1,6 @@
+// src/components/Login/Login.js
 import React, { useState } from 'react';
-import './App.css'; // Make sure to import your CSS here as well
+import './Login.css';  // Login component-specific styles
 
 const Login = () => {
   const [username, setUsername] = useState('');
@@ -25,7 +26,6 @@ const Login = () => {
 
       const data = await response.json();
       console.log('Login successful:', data);
-      // Handle successful login (e.g., save token, redirect user)
     } catch (error) {
       console.error('Login Error:', error);
       setError('Login failed. Please try again.');
@@ -40,7 +40,6 @@ const Login = () => {
           <label>Username:</label>
           <input
             type="text"
-            className="form-input"
             value={username}
             onChange={(e) => setUsername(e.target.value)}
             required
@@ -50,14 +49,13 @@ const Login = () => {
           <label>Password:</label>
           <input
             type="password"
-            className="form-input"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
             required
           />
         </div>
-        <button type="submit" className="submit-button">Login</button>
-        {error && <p className="error-message">{error}</p>}
+        <button type="submit">Login</button>
+        {error && <p>{error}</p>}
       </form>
     </div>
   );

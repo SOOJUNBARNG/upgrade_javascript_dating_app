@@ -1,6 +1,6 @@
 // src/components/Home/Home.js
 import React from 'react';
-import './Home.css';  // Home component-specific styles
+import './Inquiry.css';  // Home component-specific styles
 
 const Home = () => {
   return (

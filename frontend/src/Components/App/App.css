@@ -1,24 +1,15 @@
 /* App.css */
 .App {
-  text-align: center;
+  text-align: right;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  color: white;
-}
-
-/* General Styles */
-body {
+html, body {
   margin: 0;
-  font-family: 'Arial', sans-serif;
-  background-color: #f9f9f9; /* Light background */
-  color: #333; /* Dark text */
+  padding: 0;
+  background-color: #fff; /* Set background to white */
+  height: 100%; /* Ensure the background fills the entire page */
+  width: 100%;
+  box-sizing: border-box;
 }
 
 /* Header Styles */
@@ -26,68 +17,76 @@ body {
 .App-header {
   display: flex;
   flex-direction: row; 
-  justify-content: center;
+  min-height: 5vh;
+  justify-content: flex-start;
   align-items: center;
+  max-width: 40%; /* Reduce the width to bring logo and nav closer to center */
+  margin: 0 auto; /* Center the header container on the page */
   padding: 20px;
   background-color: #fff; /* White background for header */
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }
 
-
-.logo-img {
-  width: 100px;  /* Set a fixed width for the image */
-  height: auto;  /* Maintain the aspect ratio */
-  display: inline-block;  /* Align inline with other elements */
-  margin-right: 10px;  /* Add spacing between the logo image and text */
+.App-header a {
+  margin-left: 15px; /* Add space between the URLs */
+  text-decoration: none; /* Optional: removes underline */
+  color: #000; /* Optional: set link color */
 }
 
-.logo-text {
-  width: 80px;  /* Set a fixed width for the logo text */
-  height: auto;  /* Maintain the aspect ratio */
-  display: inline-block;  /* Align inline with other elements */
-  vertical-align: middle;  /* Vertically align with the image */
+.logo-container {
+  display: flex;
+  align-items: center;
 }
 
-/* Button Styles */
-button {
-  background-color: #ff4081; /* Primary button color */
-  color: white;
-  border: none;
-  border-radius: 5px;
-  padding: 10px 20px;
-  cursor: pointer;
-  font-size: 16px;
-  transition: background-color 0.3s;
+.logo_img {
+  height: 60px; /* Smaller size for logo image */
+  margin-right: 8px; /* Space between image and text */
 }
 
-button:hover {
-  background-color: #e91e63; /* Darker shade on hover */
+.logo_txt {
+  height: 60px; /* Smaller size for logo text */
 }
 
-/* Login Component */
-.login-container {
-  background-color: #fff; /* White background for login */
-  border-radius: 8px;
-  padding: 40px; /* Increase padding for a larger look */
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  width: 400px; /* Make the width bigger */
-  margin: auto; /* Center horizontally */
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); /* Center vertically and horizontally */
+/* Nav Styles */
+nav {
+  display: flex; /* Flex layout for navigation links */
+  margin-left: auto; /* Push navigation links to the right */
 }
 
-.login-container input {
-  padding: 10px; /* Adjust padding for better user experience */
-  width: 100%; /* Ensure the input fields take up the entire width */
-  box-sizing: border-box; /* Prevent padding from affecting the overall width */
+nav a {
+  margin-left: 20px; /* Space between the URLs */
+  text-decoration: none; /* Optional: removes underline */
+  color: #000; /* Optional: set link color */
+  font-size: 16px; /* Adjust font size for links */
 }
 
-.login-container h2 {
-  margin: 0;
-  margin-bottom: 20px;
-  color: #333; /* Dark text for heading */
+nav a:hover {
+  color: #007BFF; /* Optional: change color on hover */
+}
+
+/* Responsive Design: Media Query */
+@media (max-width: 768px) {
+  .App-header {
+    flex-direction: column; /* Stack logo and nav vertically on smaller screens */
+    justify-content: center; /* Center everything */
+    padding: 10px; /* Adjust padding */
+  }
+
+  .logo-container {
+    margin-bottom: 15px; /* Add space between logo and nav */
+  }
+
+  .logo_img, .logo_txt {
+    height: 40px; /* Smaller logo for mobile */
+  }
+
+  nav {
+    justify-content: center; /* Center navigation on mobile */
+  }
+
+  nav a {
+    font-size: 14px; /* Smaller font size for mobile */
+    margin-left: 10px; /* Reduce space between links */
+  }
 }
 
 /* Input Styles */

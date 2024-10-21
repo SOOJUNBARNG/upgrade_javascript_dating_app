@@ -5,10 +5,10 @@ import './Home.css';  // Home component-specific styles
 const Home = () => {
   return (
     <div className="home-container">
-      <h1>マッチング４８のホームページ</h1>
+      <h2>マッチング４８のホームページ</h2>
       <p>四柱推命サービスへようこそ</p>
-      <h1>マッチング４８のホームページ</h1>
-      <p>四柱推命サービスへようこそ</p>
+      <h2> </h2>
+
     </div>
   );
 };

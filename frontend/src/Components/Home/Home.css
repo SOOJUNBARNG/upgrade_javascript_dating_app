@@ -1,12 +1,19 @@
-/* Home.css */
 .home-container {
-    margin: 0 auto;
-    max-width: 600px;
-    padding: 20px;
-    text-align: center;
-  }
-  
-  h1 {
-    color: #333;
-  }
-  
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  justify-content: flex-start; /* Align items to the top */
+  align-items: flex-start; /* Align items to the left (for flexbox) */
+  height: 50vh; /* Set height to 50% of the viewport */
+  margin: 0 auto; /* Center the container horizontally on the page */
+  padding: 20px;
+  text-align: left; /* Ensure text is aligned to the left */
+  margin-left: -100px; /* Adjust this value to move it more to the left */
+  width: 80%; /* Set explicit width */
+  position: relative; /* Make container positionable */
+  left: -5%; /* Adjust the percentage for the left position */
+}
+
+h1 {
+  color: #333;
+  text-align: left; /* Ensure the heading text is aligned to the left */
+}

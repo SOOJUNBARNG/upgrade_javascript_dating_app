@@ -1,36 +1,31 @@
-/* App.css */
 .App {
-  text-align: right;
+  text-align: center;
+  min-height: 100vh; /* Full viewport height */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Keep content at the top */
+  align-items: center;
 }
 
 html, body {
   margin: 0;
   padding: 0;
-  background-color: #fff; /* Set background to white */
-  height: 100%; /* Ensure the background fills the entire page */
+  background-color: #fff; /* White background */
+  height: 100%;
   width: 100%;
   box-sizing: border-box;
 }
 
 /* Header Styles */
-/* Logo Styling */
 .App-header {
   display: flex;
-  flex-direction: row; 
-  min-height: 5vh;
-  justify-content: flex-start;
+  justify-content: space-between; /* Spread logo and nav on either side */
   align-items: center;
-  max-width: 40%; /* Reduce the width to bring logo and nav closer to center */
-  margin: 0 auto; /* Center the header container on the page */
+  width: 50%; /* Full width */
+  max-width: 1200px; /* Limit the width to look good on larger screens */
   padding: 20px;
-  background-color: #fff; /* White background for header */
-}
-
-.App-header a {
-  margin-left: 15px; /* Add space between the URLs */
-  padding: 5px;
-  text-decoration: none; /* Optional: removes underline */
-  color: #000; /* Optional: set link color */
+  margin: 0 auto; /* Center the header */
+  background-color: #fff;
 }
 
 .logo-container {
@@ -39,37 +34,37 @@ html, body {
 }
 
 .logo_img {
-  height: 60px; /* Smaller size for logo image */
-  margin-right: 8px; /* Space between image and text */
+  height: 50px; /* Adjusted size for logo */
+  margin-right: 10px; /* Space between logo image and text */
 }
 
 .logo_txt {
-  height: 60px; /* Smaller size for logo text */
+  height: 50px; /* Adjusted size for logo text */
 }
 
-/* Nav Styles */
 nav {
-  display: flex; /* Flex layout for navigation links */
-  margin-left: auto; /* Push navigation links to the right */
+  display: flex;
+  align-items: center;
 }
 
 nav a {
-  margin-left: 10px; /* Space between the URLs */
-  text-decoration: none; /* Optional: removes underline */
-  color: #000; /* Optional: set link color */
-  font-size: 14px; /* Adjust font size for links */
+  margin-left: 20px; /* Space between links */
+  padding: 5px;
+  text-decoration: none;
+  color: #000;
+  font-size: 16px; /* Adjusted font size */
 }
 
 nav a:hover {
   color: #007BFF; /* Optional: change color on hover */
 }
 
-/* Responsive Design: Media Query */
+/* Responsive Design for smaller screens */
 @media (max-width: 768px) {
   .App-header {
     flex-direction: column; /* Stack logo and nav vertically on smaller screens */
-    justify-content: center; /* Center everything */
-    padding: 10px; /* Adjust padding */
+    justify-content: center;
+    padding: 10px;
   }
 
   .logo-container {
@@ -81,71 +76,11 @@ nav a:hover {
   }
 
   nav {
-    justify-content: center; /* Center navigation on mobile */
+    justify-content: center; /* Center navigation links */
   }
 
   nav a {
-    font-size: 14px; /* Smaller font size for mobile */
-    margin-left: 10px; /* Reduce space between links */
+    font-size: 14px;
+    margin-left: 10px;
   }
-}
-
-/* Input Styles */
-input[type='text'],
-input[type='password'] {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 15px;
-  border: 1px solid #ccc; /* Light border */
-  border-radius: 5px;
-}
-
-input[type='text']:focus,
-input[type='password']:focus {
-  border-color: #ff4081; /* Highlight border color */
-  outline: none; /* Remove default outline */
-}
-
-/* Footer Styles */
-.footer {
-  text-align: center;
-  padding: 20px;
-  background-color: #fff;
-  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-}
-
-/* Additional styles for the Login component */
-.form-group {
-  margin-bottom: 15px; /* Space between input fields */
-}
-
-.form-input {
-  width: 100%; /* Full width */
-  padding: 10px; /* Padding for input */
-  margin-top: 5px; /* Space above input */
-  border: 1px solid #ccc; /* Light border */
-  border-radius: 5px; /* Rounded corners */
-}
-
-.submit-button {
-  background-color: #ff4081; /* Primary button color */
-  color: white;
-  border: none;
-  border-radius: 5px;
-  padding: 10px 20px;
-  cursor: pointer;
-  font-size: 16px;
-  transition: background-color 0.3s;
-}
-
-.submit-button:hover {
-  background-color: #e91e63; /* Darker shade on hover */
-}
-
-.error-message {
-  color: red; /* Red color for error messages */
-  margin-top: 10px; /* Space above error message */
 }

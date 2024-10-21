@@ -1,12 +1,18 @@
-/* Home.css */
-.home-container {
-    margin: 0 auto;
-    max-width: 600px;
-    padding: 20px;
-    text-align: center;
-  }
-  
-  h1 {
-    color: #333;
-  }
-  
+.birth-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-row {
+  display: flex;
+  justify-content: space-between; /* Adjust as necessary */
+}
+
+.person-info {
+  flex: 1; /* Allows both columns to take equal space */
+  margin: 0 10px; /* Add some spacing between the two columns */
+}
+
+.form-group {
+  margin-bottom: 15px; /* Add some space between form fields */
+}

@@ -1,12 +1,49 @@
 /* Home.css */
 .home-container {
-    margin: 0 auto;
-    max-width: 600px;
-    padding: 20px;
-    text-align: center;
-  }
-  
-  h1 {
-    color: #333;
-  }
-  
+  margin: 0 auto;
+  max-width: 600px;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  color: #333;
+}
+
+.birth-form {
+  width: 60%; /* Set the width of the form */
+  max-width: 600px; /* Maximum width for larger screens */
+  margin: 0 auto; /* Center the form */
+  padding: 20px; /* Add some padding */
+  border: 1px solid #ccc; /* Optional: Add a border */
+  border-radius: 8px; /* Optional: Rounded corners */
+  background-color: #f9f9f9; /* Optional: Background color */
+}
+
+.form-group {
+  margin-bottom: 15px; /* Spacing between form groups */
+}
+
+input[type="text"],
+input[type="number"],
+input[type="time"] {
+  width: 100%; /* Make input fields take the full width of their parent */
+  padding: 10px; /* Add padding for better touch targets */
+  font-size: 16px; /* Increase font size for readability */
+  border: 1px solid #ccc; /* Optional: Add a border */
+  border-radius: 4px; /* Optional: Rounded corners */
+}
+
+.submit-btn {
+  padding: 10px 20px; /* Add padding to the button */
+  font-size: 16px; /* Increase font size for readability */
+  background-color: #4CAF50; /* Green background */
+  color: white; /* White text */
+  border: none; /* Remove border */
+  border-radius: 4px; /* Optional: Rounded corners */
+  cursor: pointer; /* Change cursor on hover */
+}
+
+.submit-btn:hover {
+  background-color: #45a049; /* Darker green on hover */
+}

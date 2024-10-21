@@ -1,0 +1,12 @@
+/* Home.css */
+.home-container {
+    margin: 0 auto;
+    max-width: 600px;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  h1 {
+    color: #333;
+  }
+  

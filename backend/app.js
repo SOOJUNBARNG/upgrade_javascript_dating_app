@@ -3,6 +3,7 @@ const cors = require('cors'); // Import cors
 const mongoose = require('mongoose');
 const authRoutes = require('./routes/auth'); // adjust the path if needed
 const protectedRoutes = require('./routes/protected'); // Import protected routes
+const serviceRoutes = require('./routes/service'); // Import service routes
 require('dotenv').config();
 
 const app = express();
@@ -15,6 +16,7 @@ app.use(express.json()); // this ensures req.body is populated with parsed data
 // Routes
 app.use('/api/auth', authRoutes);
 app.use('/api/protected', protectedRoutes); // Protected routes
+app.use('/api/services', serviceRoutes); // Add the new service routes
 
 // MongoDB connection
 mongoose.connect(process.env.MONGO_URI)

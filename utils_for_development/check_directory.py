@@ -15,7 +15,7 @@ def display_structure(startpath, indent_level=0):
             print(f"{indent}├── {item}")
 
 # Specify the base directory (can be the current directory or any other path)
-base_directory = r".."
+base_directory = r"."
 
 # Display the directory structure
 display_structure(base_directory)
